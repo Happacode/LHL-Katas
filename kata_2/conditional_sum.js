@@ -16,7 +16,7 @@ const conditionalSum = function(values, condition) {
   return result;
 }
 
-console.log(conditionalSum([1, 2, 3, 4, 5], "even"));
-console.log(conditionalSum([1, 2, 3, 4, 5], "odd"));
-console.log(conditionalSum([13, 88, 12, 44, 99], "even"));
-console.log(conditionalSum([], "odd"));
+console.log(conditionalSum([1, 2, 3, 4, 5], "even")); // Answer 6
+console.log(conditionalSum([1, 2, 3, 4, 5], "odd")); // Answer 9
+console.log(conditionalSum([13, 88, 12, 44, 99], "even")); // Answer 144
+console.log(conditionalSum([], "odd")); // Answer 0
