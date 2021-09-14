@@ -1,5 +1,19 @@
 const whereCanIPark = function (spots, vehicle) {
 
+  for (let y = 0; y < spots.length; y++) {
+        
+    for (let x = 0; x < spots[y].length; x++) {
+      
+      const spot = spots[y][x]
+      
+      if (vehicle === 'regular') {
+        if (spot === 'R') {
+          return [x, y]
+        }
+      }
+    }  
+  }
+  return false;
 }
 
 console.log(whereCanIPark(
