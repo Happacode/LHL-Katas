@@ -11,6 +11,11 @@ const whereCanIPark = function (spots, vehicle) {
           return [x, y]
         }
       }
+      else if (vehicle === 'small') {
+        if (spot === 'R' || spot === 'S') {
+          return [x, y]
+        } 
+      }
     }  
   }
   return false;
