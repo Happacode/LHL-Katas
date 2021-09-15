@@ -1,5 +1,13 @@
 const checkAir = function (samples, threshold) {
 
+  let airQuality = 0;
+  for (let i = 0; i < samples.length; i++) {
+    if (samples[i] === "dirty") {
+      airQuality++;
+    }
+  }
+  return "Polutted"
+
 }
 
 console.log(checkAir(
