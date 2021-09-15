@@ -6,7 +6,12 @@ const checkAir = function (samples, threshold) {
       airQuality++;
     }
   }
-  return "Polutted"
+  if ((airQuality/samples.length) < threshold) {
+    return "Clean";
+  }
+  else {
+    return "Polutted";
+  }
 
 }
 
