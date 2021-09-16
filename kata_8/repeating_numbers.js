@@ -1,5 +1,17 @@
 const repeatNumbers = function(arr) {
+  let output = [];
 
+  for (let i = 0; i < arr.length; i++) {
+    let line = '';
+    
+    for (let j = 0; j < arr[i][1]; j++) {
+      line += arr[i][0];
+    }
+
+    output.push(line);
+  }
+  
+  return output.join(', ');
 };
 
 console.log(repeatNumbers([[1, 10]]));
