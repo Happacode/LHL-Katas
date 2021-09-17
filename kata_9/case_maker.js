@@ -1,0 +1,3 @@
+let camelCase = function(str) {
+
+};
