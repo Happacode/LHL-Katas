@@ -1,0 +1,4 @@
+const multiplicationTable = function(maxValue) {
+  
+}
+
